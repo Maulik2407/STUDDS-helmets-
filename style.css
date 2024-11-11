@@ -1,0 +1,617 @@
+body {
+    position: relative;
+    /* z-index: 11111; */
+}
+
+.nav-link {
+    color: rgb(93, 244, 235);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav-link:hover {
+    color: rgb(93, 186, 244);
+    text-shadow: 5px 5px 8px #00A97F;
+}
+
+/* From Uiverse.io by nikk7007 */ 
+.btn {
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.4em 1.60em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover {
+    color: var(--color2);
+   }
+   
+   .btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
+
+
+
+/*   con--1  */
+
+.video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.second-card-one p {
+    width: 800px;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.card-box button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+.main-card img {
+    width: 500px;
+}
+
+
+/*    con-3    */
+
+.main-t-card {
+    height: 100vh;
+    /* border: 4px solid rgb(225, 255, 0); */
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.i-card-one {
+    width: 400px;
+    height: 300px;
+}
+
+.i-card-two {
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 10%;
+}
+
+.i-card-three {
+    width: 350px;
+    height: 300px;
+}
+
+
+.i-one {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* rotate: 20deg; */
+}
+
+.i-two {
+    /* width: 100%; */
+    /* height: 100%; */
+    position: absolute;
+    width: 280px;
+    rotate: 10deg;
+    top: 11px;
+    right: 56px;
+    rotate: 2deg;
+    /* object-fit: cover; */
+}
+
+.i-three {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 16px;
+}
+
+.i-four {
+    width: 330px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.i-five {
+    width: 350px;
+    object-fit: cover;
+}
+
+.i-six {
+    width: 240px;
+    position: absolute;
+    top: -20px;
+    right: 40px;
+    rotate: deg;
+}
+
+
+.i-sev {
+    width: 290px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.i-vvc {
+    /* position: absolute; */
+    width: 290px;
+}
+
+
+.off-rod {
+    position: absolute;
+    width: 150px;
+}
+
+.i-ctt {
+    position: absolute;
+    width: 210px;
+    top: 19px;
+    right: 50px;
+    rotate: 4deg;
+}
+
+.tools {
+    height: 300px;
+    z-index: 1111;
+    transition: .4s ease-in-out;
+}
+.tools:hover {
+    transform: translateY(-10px);
+    transition: .4s ease-in-out;
+}
+.tools span:hover {
+    text-shadow: 2px 6px 5px rgba(242, 67, 67, 0.838);
+    transition: .4s ease-in-out;
+}
+
+.for-card {
+    width: 430px;
+    height: 130px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background-image: url("access-btn.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sup-box {
+    width: 600px;
+    height: 300px;
+    /* border: 4px solid red; */
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.circel-box {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    left: 20%;
+    top: 0%;
+}
+
+.rott {
+    animation-name: root;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    transition: 4s ease-in-out;
+}
+
+@keyframes root {
+    0% {
+        transform: rotate(0);
+        transition: 4s ease-in-out;
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transition: 4s ease-in-out;
+    }
+}
+
+.six-card {
+    width: 700px;
+    height: 100%;
+    position: relative;
+}
+
+.glass {
+    animation-name: glasss;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    width: 254px;
+    top: 37%;
+    left: 21%;
+    position: absolute;
+    z-index: 111;
+}
+
+.gg-hel {
+    width: 430px;
+    z-index: 11;
+    position: absolute;
+}
+
+@keyframes glasss {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: rotate(35deg);
+        transform-origin: right;
+        padding-top: 25px;
+        padding-left: 5px;
+        /* position: absolute;
+        bottom: -100px !important; */
+    }
+}
+
+.bob:hover {
+    scale: 1.05;
+    transition: .4s ease-in-out;
+}
+
+
+
+.main-card {
+    animation-name: osmmm;
+    animation-duration: 50s;
+    /* border: 5px solid magenta !important; */
+    animation-iteration-count: infinite;
+    flex: 200% 0 0 0;
+    animation-timing-function: all linear;
+}
+
+@keyframes osmmm {
+    0% {
+        transform: translateX(-0);
+    }
+
+    99% {
+        transform: translateX(-600%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.sup-box {
+    animation-name: roll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    flex: 1000px 0 0 0;
+    animation-timing-function: linear;
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(0);
+    }
+
+    99% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.dj-light {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    z-index: 111;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    transition: .7s ease-in-out;
+    /* border: 10px solid yellow !important; */
+}
+
+.dj-light:hover {
+    opacity: 1;
+    transition: 2s all ease-in-out;
+}
+
+.main-con-three:hover .dj-light {
+    opacity: 1;
+    transition: 2s all ease-in-out;
+}
+
+.main-con-four:hover .dj-light {
+    opacity: 1;
+    transition: 2s all ease-in-out;
+}
+
+.main-con-five:hover .dj-light {
+    opacity: 1;
+    transition: 2s all ease-in-out;
+}
+
+.main-con-two:hover .dj-light {
+    opacity: 1;
+    transition: 2s all ease-in-out;
+}
+
+.main-con-six:hover .dj-light {
+    opacity: 1;
+    transition: 2s all ease-in-out;
+}
+
+
+
+.dj-light-2 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    z-index: 111;
+    opacity: 0;
+    transition: .7s ease-in-out;
+}
+
+.dj-light-2:hover {
+    opacity: 1;
+    transition: 2s all ease-in-out;
+}
+
+.main-con-three:hover .dj-light-2 {
+    opacity: 1;
+    transition: 2s all ease-in-out;
+}
+
+.main-con-four:hover .dj-light-2 {
+    opacity: 1;
+    transition: 2s all ease-in-out;
+}
+
+.main-con-two:hover .dj-light-2 {
+    opacity: 1;
+    transition: 2s all ease-in-out;
+}
+
+.main-con-five:hover .dj-light-2 {
+    opacity: 1;
+    transition: 2s all ease-in-out;
+}
+
+.main-con-six:hover .dj-light-2 {
+    opacity: 1;
+    transition: 2s all ease-in-out;
+}
+
+/* @keyframes f-light{
+
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
+
+.map-circel {
+    width: 630px;
+    height: 630px;
+    box-shadow: white 0px 5px 15px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.roro {
+    animation-name: robb;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    /* display: flex; */
+    flex: 800px 0 0 0;
+}
+
+@keyframes robb {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+
+
+.form-control {
+    background-color: transparent;
+}
+
+.form-control::placeholder {
+    color: rgb(93, 244, 235);
+}
+
+.mini-nav {
+    /* border: 4px solid red; */
+    width: 70%;
+}
+
+.mini-nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(93, 244, 235);
+    font-weight: bold;
+}
+
+
+.end-ttx {
+    font-size: 26px;
+    color: white;
+}
+
+.band-ttx {
+    width: 300px;
+    font-size: 18px;
+    color: white;
+}
+
+.end-ttx-two {
+    font-size: 18px;
+    text-align: end;
+}
+
+.card-end {
+    width: 400px;
+    text-align: center;
+}
+
+.card-end h1 {
+    font-size: 22px;
+    color: rgb(93, 244, 235);
+}
+
+.card-end p {
+    font-size: 16px;
+    color: white;
+}
+
+.bkk {
+    /* border: 4px solid red; */
+}
+
+.baa {
+    /* border: 4px solid rgb(0, 8, 255); */
+
+}
+
+.bgg {
+    /* border: 4px solid rgb(0, 255, 8); */
+}
+
+.byy {
+    /* border: 4px solid rgb(208, 255, 0); */
+}
+
+
+
+
+.falana {
+    --sb-track-color: #232e3300;
+    --sb-thumb-color: #6baf8d00;
+    --sb-size: 1px;
+}
+
+.falana::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+.falana::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 0px;
+}
+
+.falana::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 0px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    .falana {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+
+/*   scrooll */
+
+.dhoom {
+    --sb-track-color: #232e3300;
+    --sb-thumb-color: #6baf8d00;
+    --sb-size: 1px;
+}
+
+.dhoom::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+.dhoom::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 0px;
+}
+
+.dhoom::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 0px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    .dhoom {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+.sev-btn {
+    background: #00A97F;
+    color: white;
+    transition: .3s ease-in-out;
+}
+.sev-btn:hover {
+    scale: 1.1;
+    background: #0e8165af;
+    transition: .3s ease-in-out;
+}
